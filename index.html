@@ -217,4 +217,20 @@
         </div>
     </div> 
 
-   
+    <script>
+        const apiKey = "fb5c50795a4f42c5bd170548250710"; 
+        const defaultCity = "Yogyakarta";
+
+        function fetchData(city) {
+            const encodedCity = encodeURIComponent(city);
+            const urlapi = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodedCity}&aqi=no`;
+
+            $.ajax({
+                url: urlapi,
+                method: "GET",
+                success: function(data) {
+                    console.log(data);
+                    
+                    // --- Weather Data Mapping ---
+                    $("#suhu_c").text(data.current.temp_c);
+                    
