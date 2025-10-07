@@ -156,3 +156,35 @@
         }
 
     </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+
+    <div id="weather_frame">
+        
+        <div id="lokasi_input_container">
+            <span id="lokasi_label">Lokasi:</span>
+            <input type="text" id="lokasi_input" value="Yogyakarta">
+            <button id="set_button">Set</button>
+        </div>
+        
+        <div id="tampilan">
+            
+            <p>Cuaca</p>
+            <p>
+                <span class="data-label">Suhu Celcius =</span> 
+                <span class="data-value"><span id="suhu_c">---</span> °C</span>
+            </p>
+            <p>
+                <span class="data-label">Suhu Fahrenheit =</span> 
+                <span class="data-value"><span id="suhu_f">---</span> °F</span>
+            </p>
+            <p>
+                <span class="data-label">Kelembapan =</span> 
+                <span class="data-value"><span id="kelembapan">---</span> %</span>
+            </p>
+            
+            
